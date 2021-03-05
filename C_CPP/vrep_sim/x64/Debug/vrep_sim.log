@@ -1,0 +1,4 @@
+﻿  robot_operation.cpp
+C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\src\robot\robot_operation.cpp(43,28): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\src\robot\robot_operation.cpp(44,31): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  vrep_sim.vcxproj -> C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\x64\Debug\vrep_sim.exe

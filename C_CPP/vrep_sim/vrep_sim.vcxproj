@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\actuator\encoder.h" />
+    <ClInclude Include="include\actuator\inversekinematics.h" />
+    <ClInclude Include="include\actuator\motor.h" />
+    <ClInclude Include="include\actuator\param.h" />
+    <ClInclude Include="include\control\fuzzy_pid.h" />
+    <ClInclude Include="include\control\PID.h" />
+    <ClInclude Include="include\math\defines.h" />
+    <ClInclude Include="include\math\linalg.h" />
+    <ClInclude Include="include\robot\robot_operation.h" />
+    <ClInclude Include="include\robot\robot_state.h" />
+    <ClInclude Include="include\robot\robo_init.h" />
+    <ClInclude Include="include\sim\connection.h" />
+    <ClInclude Include="include\sim\extApi.h" />
+    <ClInclude Include="include\sim\extApiPlatform.h" />
+    <ClInclude Include="include\sim\objectHandling.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\actuator\encoder.cpp" />
+    <ClCompile Include="src\actuator\inversekinematics.cpp" />
+    <ClCompile Include="src\actuator\motor.cpp" />
+    <ClCompile Include="src\actuator\param.cpp" />
+    <ClCompile Include="src\control\fuzzy_pid.cpp" />
+    <ClCompile Include="src\control\PID.cpp" />
+    <ClCompile Include="src\robot\code.cpp" />
+    <ClCompile Include="src\robot\robot_operation.cpp" />
+    <ClCompile Include="src\robot\robo_init.cpp" />
+    <ClCompile Include="src\sim\connection.cpp" />
+    <ClCompile Include="src\sim\extApi.c" />
+    <ClCompile Include="src\sim\extApiPlatform.c" />
+    <ClCompile Include="src\sim\objectHandling.cpp" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{0d18061a-2f98-4316-82e8-4e1ea0f4a678}</ProjectGuid>
+    <RootNamespace>vrepsim</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NON_MATLAB_PARSING=1;MAX_EXT_API_CONNECTIONS=255;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\common;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\include;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\remoteApi;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\sim;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\actuator;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\math;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\robot;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\control;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NON_MATLAB_PARSING=1;MAX_EXT_API_CONNECTIONS=255;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\common;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\include;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\remoteApi;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\sim;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\actuator;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\math;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\robot;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\control;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NON_MATLAB_PARSING=1;MAX_EXT_API_CONNECTIONS=255;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\common;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\include;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\remoteApi;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\sim;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\actuator;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\math;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\robot;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\control;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;NON_MATLAB_PARSING=1;MAX_EXT_API_CONNECTIONS=255;DO_NOT_USE_SHARED_MEMORY;_CRT_SECURE_NO_WARNINGS</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\common;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\include;C:\Program Files\CoppeliaRobotics\CoppeliaSimEdu\programming\remoteApi;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\sim;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\actuator;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\math;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\robot;C:\Users\Acer\Documents\copeliasim\C_CPP\vrep_sim\include\control;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

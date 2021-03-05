@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="include">
+      <UniqueIdentifier>{ef7f0d0a-7657-4105-865d-5d0db03b2052}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\control">
+      <UniqueIdentifier>{f48f476c-3c94-4f1e-a618-35dbe309513a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\actuator">
+      <UniqueIdentifier>{8bcf4976-0b40-467a-9aa9-4f75e587fd03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\robot">
+      <UniqueIdentifier>{a12cfe5e-7765-4384-a65c-791c460fd53d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\math">
+      <UniqueIdentifier>{3d9999df-82e1-446e-8217-408b83dc22df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="include\sim">
+      <UniqueIdentifier>{2c96f73d-ce7c-4264-a584-f13a2a8fa42c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{c0a86361-02aa-4f5f-9c3a-6269ba803f2b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\actuator">
+      <UniqueIdentifier>{c5664b72-1237-45d5-a0b6-72fdc184758e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\control">
+      <UniqueIdentifier>{cbed2fbe-256f-4926-9265-a52ae4346248}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\robot">
+      <UniqueIdentifier>{23462ab5-c1af-4a44-a026-b70d5e603b04}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\sim">
+      <UniqueIdentifier>{8d754dad-ddcc-4585-95dc-a41f49caf013}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\control\fuzzy_pid.h">
+      <Filter>include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="include\control\PID.h">
+      <Filter>include\control</Filter>
+    </ClInclude>
+    <ClInclude Include="include\actuator\encoder.h">
+      <Filter>include\actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\actuator\inversekinematics.h">
+      <Filter>include\actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\actuator\motor.h">
+      <Filter>include\actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\actuator\param.h">
+      <Filter>include\actuator</Filter>
+    </ClInclude>
+    <ClInclude Include="include\robot\robo_init.h">
+      <Filter>include\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="include\robot\robot_operation.h">
+      <Filter>include\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="include\robot\robot_state.h">
+      <Filter>include\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\defines.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\math\linalg.h">
+      <Filter>include\math</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sim\connection.h">
+      <Filter>include\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sim\extApi.h">
+      <Filter>include\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sim\extApiPlatform.h">
+      <Filter>include\sim</Filter>
+    </ClInclude>
+    <ClInclude Include="include\sim\objectHandling.h">
+      <Filter>include\sim</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\actuator\encoder.cpp">
+      <Filter>src\actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\actuator\inversekinematics.cpp">
+      <Filter>src\actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\actuator\motor.cpp">
+      <Filter>src\actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\actuator\param.cpp">
+      <Filter>src\actuator</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control\fuzzy_pid.cpp">
+      <Filter>src\control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\control\PID.cpp">
+      <Filter>src\control</Filter>
+    </ClCompile>
+    <ClCompile Include="src\robot\code.cpp">
+      <Filter>src\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\robot\robo_init.cpp">
+      <Filter>src\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\robot\robot_operation.cpp">
+      <Filter>src\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sim\connection.cpp">
+      <Filter>src\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sim\extApi.c">
+      <Filter>src\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sim\extApiPlatform.c">
+      <Filter>src\sim</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sim\objectHandling.cpp">
+      <Filter>src\sim</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
