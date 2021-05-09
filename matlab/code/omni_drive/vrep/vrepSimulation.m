@@ -1,5 +1,3 @@
-%% V-REP Simulation Exercise 3: Kinematic Control
-% Tests the implemented control algorithm within a V-Rep simulation.
 
 % In order to run the simulation:
 %   - Start V-Rep
